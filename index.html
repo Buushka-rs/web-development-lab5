@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <!-- Mobile-First: viewport заавал байх ёстой -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Вэб Хуудас | Лаб 5</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#">WebStudio</a>
+
+      <!-- Гар утсанд харагдах цэсний товч (hamburger) -->
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="menu" aria-label="Цэс нээх">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="main-nav" id="menu" aria-label="Үндсэн цэс">
+        <ul class="nav-list">
+          <li><a href="#home" class="active">Нүүр</a></li>
+          <li><a href="#services">Үйлчилгээ</a></li>
+          <li><a href="#about">Бидний тухай</a></li>
+          <li><a href="#contact">Холбоо барих</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <h1>Дэлгэц бүрт тохирдог вэб хуудас</h1>
+        <p>Гар утас, таблет, компьютер дээр ижил сайн харагддаг сайтыг хамтдаа бүтээе.</p>
+        <a href="#contact" class="btn">Эхлэх</a>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <h2>Үйлчилгээ</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Вэб дизайн</h3>
+            <p>Цэвэр, ойлгомжтой, хэрэглэгчдэд ээлтэй загвар.</p>
+          </article>
+          <article class="card">
+            <h3>Хөгжүүлэлт</h3>
+            <p>HTML, CSS, JavaScript ашигласан хурдан сайт.</p>
+          </article>
+          <article class="card">
+            <h3>Дэмжлэг</h3>
+            <p>Сайтыг шинэчлэх, засварлах тогтмол үйлчилгээ.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="about">
+      <div class="container about-grid">
+        <div>
+          <h2>Бидний тухай</h2>
+          <p>Mobile-First аргаар эхлээд жижиг дэлгэцэд зориулан загварчилж, дараа нь таблет болон компьютерт тохируулан өргөтгөдөг.</p>
+          <p>Ингэснээр хуудас аль ч төхөөрөмж дээр хэвтээ скролльгүй, элементүүд давхардахгүй харагдана.</p>
+        </div>
+        <div class="about-box" role="img" aria-label="Зургийн орон зай">Зураг</div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <h2>Холбоо барих</h2>
+        <form class="contact-form" action="#" method="post">
+          <label for="cname">Нэр</label>
+          <input type="text" id="cname" name="name" required>
+
+          <label for="cemail">Email</label>
+          <input type="email" id="cemail" name="email" required>
+
+          <label for="cmsg">Зурвас</label>
+          <textarea id="cmsg" name="message" rows="4"></textarea>
+
+          <button type="submit" class="btn">Илгээх</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 WebStudio. Бүх эрх хуулиар хамгаалагдсан.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
